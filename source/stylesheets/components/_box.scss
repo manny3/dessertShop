@@ -1,0 +1,21 @@
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: theme-color-level("hex", -10);;
+}
+.box1:hover{
+    background-color: theme-color-level("hex", 8);;
+}
+
+@each $color, $value in $theme-colors {
+    .box-#{$color} {
+        background-color: $value;
+        color: color-yiq($value);
+    }
+  }
