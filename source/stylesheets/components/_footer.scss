@@ -1,0 +1,11 @@
+#footer{
+    .footer-mail{
+        background: #3F5D45;
+        .footer-mail-input{
+            label{
+                position: absolute;
+                z-index: 2;
+            }
+        }
+    }
+}
