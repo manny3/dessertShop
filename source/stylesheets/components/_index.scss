@@ -86,6 +86,7 @@
         }
     }
     .product{
+        padding: 60px 0;
         .product-img{
             height: 315px;
             @extend %bg-cover;
@@ -116,6 +117,11 @@
                 background-color: #d4e0da;
                 border-color: #ccdbd4; 
             }
+        }
+    }
+    @media (min-width: 992px){
+        .product {
+            padding: 30px 0;
         }
     }
     

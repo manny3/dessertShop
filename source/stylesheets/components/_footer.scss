@@ -1,11 +1,19 @@
 #footer{
     .footer-mail{
         background: #3F5D45;
+        padding: 30px 0;
         .footer-mail-input{
             label{
                 position: absolute;
+                left: 20px;
                 z-index: 2;
             }
+            .mail-btn-accent{
+                background: #FFE180;
+            }
         }
+    }
+    .footer-massage{
+        padding: 30px 0;
     }
 }
