@@ -2,91 +2,23 @@
     .content-bg-img {
         height: 496px;
         @extend %bg-cover;
+        margin-bottom: 60px;
     }
-    .news-section {
-        margin-top: -90px;
-    }
-    .news {
-        height: 256px;
-        display: block;
-        position: relative;
-        overflow: hidden;
-        .news-img { 
-            filter: blur(5px);
-            transition: filter 0.5s;
-            z-index: 1;
-            @extend %bg-cover;
-            @extend %news-position;
-        }
-        .news-bg {
-            background-color: rgba(63, 93, 69, 0.8);
-            transition: background-color .5s;
-            z-index: 2;
-            @extend %news-position;
-        }
-        .news-text {
-            font-size: 24px;
-            letter-spacing: 10px;
-            color: white;
-            transition: color 0.5s;
-            z-index: 3;
-            writing-mode: vertical-lr;       
-            @extend %news-position;
-            @extend %box-center;
-        }
-        &.active,&:focus,&:hover {
-            .news-img {
-                filter: blur(0);
-            }
-            .news-bg {
-                background-color: rgba(255, 225, 128, 0.8);
-            }
-            .news-text {
-                color: #3F5D45;
-                font-weight: bold;
-            } 
-        }
-    }
-    @media (max-width: 768px) { 
-        .news-section {
-            margin-top: 0;
-        }
-    }
-    .intro {
-        background-color: #EAF0ED;
-        margin: 105px 0;
-        .intro-img-wrap {
-            margin-top: -24px;
-            margin-bottom: -24px;
-            .intro-bg-img {
-                height: 100%;
-                min-height: 250px;
-                @extend %bg-cover;
-            }
-        }
-        .info-content {
-            padding: 70px 0;
-            line-height: 2.5;
-        }
-        .intro-content-title{
-            margin-top: -24px;
-        }
-    }
-    @media (min-width: 992px){
-        .intro {
-            .intro-img-wrap {
-                .intro-bg-img {
-                    height: 100%;
-                    min-height: 460px;
-                }
-            }
-            .info-content {
-                writing-mode: vertical-rl;
+    .list-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        .list-group-item{
+            &:hover,&:active{
+                background: #EAF0ED;
             }
         }
     }
-    .product{
-        padding: 60px 0;
+    .list-group {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .products {
         .product-img{
             height: 315px;
             @extend %bg-cover;
@@ -122,9 +54,7 @@
         }
     }
     @media (min-width: 992px){
-        .product {
-            padding: 30px 0;
-        }
+
     }
     
 }
