@@ -1,0 +1,38 @@
+.cart {
+    .cart_img {
+        height: 110px;
+        min-width: 110px;
+        background-position: center center;
+        background-size: cover;
+    }
+    .cart-control {
+        .input-group-prepend,.form-control,.input-group-append {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .order {
+        background-color: $dark-green;
+        h4 {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+        .order_list {
+            color: white;
+            h5 {
+                font-weight: bold; 
+            }
+        }
+        @media (max-width: 992px) { 
+            background-color: white;
+            h4 {
+                background-color: $light-green;
+                color: $dark-green;
+                border-bottom: none;
+            }
+            .order_list {
+                color: $dark-green;
+            }
+        }
+    }
+}

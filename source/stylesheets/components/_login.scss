@@ -1,2 +1,21 @@
-
+.login {
+    margin-top:60px;
+    margin-bottom:60px;
+    @media (max-width: 768px) { 
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    .login_input {
+        background-color: transparent;
+        border: none;
+    }
+    .community_btn {
+        img {
+            width: 50%;
+            @media (max-width: 768px) { 
+                width: 75px;
+            }
+        }
+    }
+}
 
