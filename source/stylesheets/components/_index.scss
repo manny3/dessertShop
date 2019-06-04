@@ -19,7 +19,7 @@
             @extend %news-position;
         }
         .news-bg {
-            background-color: rgba(63, 93, 69, 0.8);
+            background-color: $dark-green;
             transition: background-color .5s;
             z-index: 2;
             @extend %news-position;
@@ -39,10 +39,10 @@
                 filter: blur(0);
             }
             .news-bg {
-                background-color: rgba(255, 225, 128, 0.8);
+                background-color: $light-yello;
             }
             .news-text {
-                color: #3F5D45;
+                color: $dark-green;
                 font-weight: bold;
             } 
         }
@@ -53,7 +53,7 @@
         }
     }
     .intro {
-        background-color: #EAF0ED;
+        background-color: $light-green;
         margin: 105px 0;
         .intro-img-wrap {
             margin-top: -24px;
@@ -95,7 +95,7 @@
                 position: absolute;
                 left: 20px;
                 top: 0;
-                background-color: #3F5D45;
+                background-color: $dark-gree;
                 writing-mode: vertical-lr;
                 padding: 15px 10px;
                 color: white;
@@ -108,8 +108,8 @@
             }
         }
         .product-btn{
-            background: #EAF0ED;
-            border: #EAF0ED;
+            background: $light-green;
+            border: $light-green;
             color: #212529;
             font-weight: bold;
             font-size: 24px;

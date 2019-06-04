@@ -54,47 +54,29 @@
               <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <h3 class="font-weight-bold py-3">運送</h3>
+                    <h3 class="font-weight-bold py-3">付款</h3>
                   </div>
                   <div class="form-group col-md-6 d-flex align-items-center">
                     <div class="process-steps w-100">
+                      <div class="step material-icons completed">done</div>
+                      <div class="step material-icons completed">done</div>
                       <div class="step material-icons active"></div>
-                      <div class="step material-icons"></div>
-                      <div class="step material-icons"></div>
                     </div>
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputLastname">姓氏</label>
-                    <input type="text" class="form-control" id="inputLastname" placeholder="王">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputFirstname">名字</label>
-                    <input type="text" class="form-control" id="inputFirstname" placeholder="小明">
-                  </div>
+                <div class="form-group">
+                  <nav class="nav nav-fill invoice mb-4">
+                    <a class="nav-item py-3 active" href="#">電子發票</a>
+                    <a class="nav-item py-3" href="#">郵寄發票</a>
+                  </nav>
                 </div>
                 <div class="form-group">
-                  <label for="inputNumber">電話</label>
-                  <input type="text" class="form-control" id="inputNumber" placeholder="0912-345-678">
+                  <label for="inputNumber">電子郵件信箱</label>
+                  <input type="text" class="form-control" id="inputNumber" placeholder="example@email.com">
                 </div>
-                <label for="inputAddress">地址</label>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <select id="inputCity" class="form-control">
-                      <option selected>高雄市</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <select id="inputRegion" class="form-control">
-                      <option selected>新興區</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-12">
-                    <input type="text" class="form-control" id="address" placeholder="幸福路 520 號">
-                  </div>
+                <div class="form-group mb-0 pb-4">
+                  <label for="inputNumber">統一編號（選填）</label>
+                  <input type="text" class="form-control" id="inputNumber" placeholder="12345678">
                 </div>
               </form>
             </div>

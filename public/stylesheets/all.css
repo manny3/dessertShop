@@ -8162,7 +8162,7 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-#content .content-bg-img, #content .news .news-img, #content .intro .intro-img-wrap .intro-bg-img, #content .product .product-img, #content .products .product-img {
+#content .content-bg-img, #content .news .news-img, #content .intro .intro-img-wrap .intro-bg-img, #content .product .product-img, #content .products .product-img, .checkout .transport .process-steps .step, .checkout .shopping_list .shopping_item .shopping_item_img {
   background-size: cover;
   background-position: center center; }
 
@@ -8173,13 +8173,17 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
   top: 0;
   bottom: 0; }
 
-#content .news .news-text {
+#content .news .news-text, .checkout .transport .process-steps .step, .success .process_steps .step {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+
+.negative-row-margin {
+  margin-left: -15px;
+  margin-right: -15px; }
 
 #footer .footer-mail {
   background: #3F5D45;
@@ -8189,7 +8193,9 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
     left: 20px;
     z-index: 2; }
   #footer .footer-mail .footer-mail-input .mail-btn-accent {
-    background: #FFE180; }
+    background: #FFE180;
+      background-position: absolute;
+       }
 
 #footer .footer-massage {
   padding: 30px 0; }
@@ -8210,7 +8216,7 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
     transition: filter 0.5s;
     z-index: 1; }
   #content .news .news-bg {
-    background-color: rgba(63, 93, 69, 0.8);
+    background-color: #3F5D45;
     transition: background-color .5s;
     z-index: 2; }
   #content .news .news-text {
@@ -8385,42 +8391,62 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
       .cart .order .order_list {
         color: #3F5D45; } }
 
-.checkout .address {
-  color: white; }
-  .checkout .address .process-steps {
+.checkout .transport {
+  color: #EAF0ED;
+  padding: 0px 40px; }
+  .checkout .transport .process-steps {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
     position: relative; }
-    .checkout .address .process-steps .step {
+    .checkout .transport .process-steps .step {
       height: 20px;
       width: 20px;
+      border: 1px solid #8DA291;
       border-radius: 50%;
       position: relative;
-      background-color: white;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      background-color: #3F5D45;
       font-size: 1rem;
       z-index: 1; }
-    .checkout .address .process-steps:after {
+      .checkout .transport .process-steps .step.active {
+        border-color: #EAF0ED; }
+        .checkout .transport .process-steps .step.active:after {
+          content: "";
+          height: 14px;
+          width: 14px;
+          display: block;
+          border-radius: 50%;
+          background-color: #EAF0ED; }
+      .checkout .transport .process-steps .step.completed {
+        font-size: 1rem;
+        background-color: #EAF0ED;
+        color: #3F5D45; }
+    .checkout .transport .process-steps:after {
       content: "";
       position: absolute;
       top: 50%;
       left: 0;
       right: 0;
       height: 1px;
-      background-color: white; }
+      background-color: #8DA291; }
+  .checkout .transport input, .checkout .transport select {
+    background-color: #EAF0ED;
+    color: #8DA291;
+    border-radius: 0; }
+  .checkout .transport .invoice a {
+    color: #EAF0ED;
+    border: 1px solid #EAF0ED;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold; }
+    .checkout .transport .invoice a.active {
+      color: #3F5D45;
+      background-color: #EAF0ED; }
 
 .checkout .shopping_list .shopping_item .shopping_item_img {
   height: 80px;
-  min-width: 80px;
-  background-position: center center;
-  background-size: cover; }
+  min-width: 80px; }
 
 @media (max-width: 768px) {
   .success .success_bg {
@@ -8439,12 +8465,6 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
     border-radius: 50%;
     position: relative;
     background-color: #3F5D45;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
     font-size: 1rem;
     z-index: 1; }
   .success .process_steps:after {
