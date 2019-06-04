@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>六角西餐廳</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="/stylesheets/all.css">
+  <link rel="stylesheet" href="stylesheets/all.css">
 
 
 </head>
@@ -46,11 +46,11 @@
   </div>
 
   <div id="content">
-    <section class="container checkout">
+    <section class="container checkout py-0 py-md-5">
       <div class="row">
         <div class="col-md-7">
-          <div class="h-100">
-            <div class="bg-dark_primary address">
+          <div class="negative-row-margin">
+            <div class="bg-dark_primary transport">
               <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
@@ -66,46 +66,43 @@
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <label for="inputLastname">姓氏</label>
+                    <input type="text" class="form-control" id="inputLastname" placeholder="王">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    <label for="inputFirstname">名字</label>
+                    <input type="text" class="form-control" id="inputFirstname" placeholder="小明">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  <label for="inputNumber">電話</label>
+                  <input type="text" class="form-control" id="inputNumber" placeholder="0912-345-678">
                 </div>
-                <div class="form-group">
-                  <label for="inputAddress2">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
+                <label for="inputAddress">地址</label>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
+                    <select id="inputCity" class="form-control">
+                      <option selected>高雄市</option>
                       <option>...</option>
                     </select>
                   </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+                  <div class="form-group col-md-6">
+                    <select id="inputRegion" class="form-control">
+                      <option selected>新興區</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-12">
+                    <input type="text" class="form-control" id="address" placeholder="幸福路 520 號">
                   </div>
                 </div>
               </form>
             </div>
             <button
-                class="btn btn-light_yellow btn-block rounded-0 btn-lg py-3 text-dark_primary font-weight-bold">下一步</button>
+              class="btn btn-light_yellow btn-block rounded-0 btn-lg py-3 text-dark_primary font-weight-bold">下一步</button>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 d-md-block d-none">
           <div class="checkout_order text-mid_primary px-3">
             <h4 class="h4 text-center font-weight-bold bg-light_primary py-3">訂單摘要
             </h4>

@@ -10,7 +10,7 @@
         color: white;
         .list-group-item{
             &:hover,&:active{
-                background: #EAF0ED;
+                background: $light-green;
             }
         }
     }
@@ -27,7 +27,7 @@
                 position: absolute;
                 left: 20px;
                 top: 0;
-                background-color: #3F5D45;
+                background-color: $dark-green;
                 writing-mode: vertical-lr;
                 padding: 15px 10px;
                 color: white;
@@ -40,8 +40,8 @@
             }
         }
         .product-btn{
-            background: #EAF0ED;
-            border: #EAF0ED;
+            background: $light-green;
+            border: $light-green;
             color: #212529;
             font-weight: bold;
             font-size: 24px;
@@ -52,9 +52,6 @@
                 border-color: #ccdbd4; 
             }
         }
-    }
-    @media (min-width: 992px){
-
     }
     
 }

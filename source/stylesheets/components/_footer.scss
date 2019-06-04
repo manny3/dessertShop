@@ -1,15 +1,22 @@
 #footer{
     .footer-mail{
-        background: #3F5D45;
+        background: $dark-green;
         padding: 30px 0;
         .footer-mail-input{
             label{
                 position: absolute;
                 left: 20px;
-                z-index: 2;
+                z-index: 3;
             }
             .mail-btn-accent{
-                background: #FFE180;
+                background-color: $light-yellow;
+                position: relative;
+                .arrow {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
