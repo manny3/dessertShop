@@ -8191,14 +8191,20 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
   #footer .footer-mail .footer-mail-input label {
     position: absolute;
     left: 20px;
-    z-index: 2; }
+    z-index: 3; }
   #footer .footer-mail .footer-mail-input .mail-btn-accent {
-    background: #FFE180;
-      background-position: absolute;
-       }
+    background-color: #FFE180;
+    position: relative; }
+    #footer .footer-mail .footer-mail-input .mail-btn-accent .arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 #footer .footer-massage {
-  padding: 30px 0; }
+  padding: 30px 0;
+  background-color: #EAF0ED; }
 
 #content .content-bg-img {
   height: 496px; }
@@ -8231,7 +8237,7 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
   #content .news.active .news-img, #content .news:focus .news-img, #content .news:hover .news-img {
     filter: blur(0); }
   #content .news.active .news-bg, #content .news:focus .news-bg, #content .news:hover .news-bg {
-    background-color: rgba(255, 225, 128, 0.8); }
+    background-color: #FFE180; }
   #content .news.active .news-text, #content .news:focus .news-text, #content .news:hover .news-text {
     color: #3F5D45;
     font-weight: bold; }
@@ -8356,11 +8362,13 @@ a.text-light_yellow:hover, a.text-light_yellow:focus {
   .login .login_input {
     background-color: transparent;
     border: none; }
-  .login .community_btn img {
-    width: 50%; }
-    @media (max-width: 768px) {
-      .login .community_btn img {
-        width: 75px; } }
+  .login .community_btn {
+    width: 100%; }
+    .login .community_btn img {
+      width: 50%; }
+      @media (max-width: 768px) {
+        .login .community_btn img {
+          width: 75px; } }
 
 .cart .cart_img {
   height: 110px;
