@@ -14,17 +14,17 @@
     .order {
         background-color: $dark-green;
         h4 {
-            color: white;
-            border-bottom: 1px solid white;
+            color: $white;
+            border-bottom: 1px solid $white;
         }
         .order_list {
-            color: white;
+            color: $white;
             h5 {
                 font-weight: bold; 
             }
         }
         @media (max-width: 992px) { 
-            background-color: white;
+            background-color: $white;
             h4 {
                 background-color: $light-green;
                 color: $dark-green;

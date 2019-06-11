@@ -1,58 +1,57 @@
-#content{
-    .content-bg-img {
-        height: 496px;
-        @extend %bg-cover;
-        margin-bottom: 60px;
-    }
-    .list-title {
-        font-size: 24px;
-        font-weight: bold;
-        color: white;
-        .list-group-item{
-            &:hover,&:active{
-                background: $light-green;
-            }
-        }
-    }
-    .list-group {
-        font-size: 24px;
-        font-weight: bold;
-    }
-    .products {
-        .product-img{
-            height: 315px;
-            @extend %bg-cover;
-            position: relative;
-            .product-tag{
-                position: absolute;
-                left: 20px;
-                top: 0;
-                background-color: $dark-green;
-                writing-mode: vertical-lr;
-                padding: 15px 10px;
-                color: white;
-                letter-spacing: 5px;
-            }
-            .product-icon{
-                position: absolute;
-                top: 20px;
-                right: 22px;
-            }
-        }
-        .product-btn{
-            background: $light-green;
-            border: $light-green;
-            color: #212529;
-            font-weight: bold;
-            font-size: 24px;
-            padding: 16px 0;
-            &:hover {
-                color: #212529;
-                background-color: #d4e0da;
-                border-color: #ccdbd4; 
-            }
-        }
-    }
-    
+.content-bg-img {
+    height: 496px;
+    @extend %bg-cover;
 }
-
+.list-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $white;
+    .list-group-item{
+        &:hover,&:active{
+            background: $light-green;
+        }
+    }
+}
+.list-group {
+    font-size: 24px;
+    font-weight: bold;
+}
+.products {
+    border-radius: 0;
+    .product-img{
+        height: 315px;
+        @extend %bg-cover;
+        position: relative;
+        .product-tag{
+            position: absolute;
+            left: 20px;
+            top: 0;
+            background-color: $dark-green;
+            writing-mode: vertical-lr;
+            padding: 15px 10px;
+            color: $white;
+            letter-spacing: 5px;
+        }
+        .product-icon{
+            position: absolute;
+            top: 20px;
+            right: 22px;
+        }
+    }
+    .product-btn{
+        background: $light-green;
+        border: $light-green;
+        color: #212529;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 16px 0;
+        &:hover {
+            color: #212529;
+            background-color: #d4e0da;
+            border-color: #ccdbd4; 
+        }
+    }
+}
+.page-link {
+    border-radius: 0 !important;
+}

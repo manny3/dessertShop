@@ -15,7 +15,7 @@
 <body>
   <div id="header">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light navbar_spacing">
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
           aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item px-4">
               <a class="nav-link text-dark_primary" href="index.html">首頁</a>
-            </li> 
+            </li>
             <li class="nav-item px-4">
               <a class="nav-link text-dark_primary" href="products.html">甜點</a>
             </li>
@@ -46,9 +46,9 @@
   </div>
 
   <div id="content">
-    <section class="container">
+    <section class="container px-0 px-md-3">
       <div class="content-bg-img" style="background-image: url(https://bit.ly/2OhbMHr)"></div>
-      <div class="row justify-content-center news-section">
+      <div class="row justify-content-center news-section index-title-img">
         <div class="col-md-10">
           <div class="row no-gutters">
             <div class="col-4">
@@ -77,7 +77,7 @@
       </div>
     </section>
     <section>
-      <div class="d-flex justify-content-center d-lg-none my-5">
+      <div class="d-flex justify-content-center d-lg-none index-slogan-img">
         <img src="images/sm-為什麼選擇了做甜點.svg" alt="選擇做甜點-sm">
       </div>
       <div class="intro">
@@ -98,7 +98,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center d-lg-none my-5">
+      <div class="d-flex justify-content-center d-lg-none index-slogan-img">
         <img src="images/sm-為什麼選擇了做甜點.svg" alt="選擇做甜點-sm">
       </div>
       <div class="intro">
@@ -122,16 +122,17 @@
     </section>
     <section class="mt-md-8 text-center">
       <img class="d-none d-md-inline" src="images/lg-想吃甜點是不需要理由的.svg" alt="吃甜點不需要理由-lg" width="88">
-      <img class="d-inline d-md-none" src="images/sm-想吃甜點是不需要理由的.svg" alt="吃甜點不需要理由-sm" width="226">
+      <img class="d-inline d-md-none index-slogan-img" src="images/sm-想吃甜點是不需要理由的.svg" alt="吃甜點不需要理由-sm" width="226">
     </section>
-    <section class="container product">
-      <div class="card-deck">
+    <section class="container">
+      <div class="product">
+        <div class="card-deck">
           <div class="card ">
             <div class="product-img bgcover" style="background-image:url(https://bit.ly/2zBjQuq);">
               <span class="product-tag text-white">本日精選</span>
               <div class="product-icon text-dark_primary">
-                  <i class="material-icons ui-show d-none">favorite</i>
-                  <i class="material-icons ui-hidden">favorite_border</i>
+                <i class="material-icons ui-show d-none">favorite</i>
+                <i class="material-icons ui-hidden">favorite_border</i>
               </div>
             </div>
             <div class="card-body p-0">
@@ -154,8 +155,8 @@
             <div class="product-img bgcover" style="background-image:url(https://bit.ly/2QvsT63);">
               <span class="product-tag text-white">本日精選</span>
               <div class="product-icon text-dark_primary">
-                  <i class="material-icons ui-show d-none">favorite</i>
-                  <i class="material-icons ui-hidden">favorite_border</i>
+                <i class="material-icons ui-show d-none">favorite</i>
+                <i class="material-icons ui-hidden">favorite_border</i>
               </div>
             </div>
             <div class="card-body p-0">
@@ -178,8 +179,8 @@
             <div class="product-img bgcover" style="background-image:url(https://bit.ly/2QbVsVR);">
               <span class="product-tag text-white">本日精選</span>
               <div class="product-icon text-dark_primary">
-                  <i class="material-icons ui-show d-none">favorite</i>
-                  <i class="material-icons ui-hidden">favorite_border</i>
+                <i class="material-icons ui-show d-none">favorite</i>
+                <i class="material-icons ui-hidden">favorite_border</i>
               </div>
             </div>
             <div class="card-body p-0">
@@ -198,7 +199,9 @@
               </a>
             </div>
           </div>
+        </div>
       </div>
+
     </section>
     <footer id="footer">
       <section class="footer-mail">
@@ -211,7 +214,8 @@
             <div class="col-md-6">
               <div class="input-group align-items-center footer-mail-input">
                 <label for="subscription" class="material-icons m-0 text-dark_primary">email</label>
-                <input type="mail" class="form-control border-right-0" placeholder="" id="subscription" style="height:56px">
+                <input type="mail" class="form-control border-right-0" placeholder="" id="subscription"
+                  style="height:56px">
                 <div class="input-group-append">
                   <button class="btn mail-btn-accent" type="button" style="width:64px; height:56px">
                     <i class="material-icons">arrow_forward</i>
@@ -224,34 +228,34 @@
       </section>
       <section class="footer-massage">
         <div class="container">
-            <div class="row">
-              <div class="col-md-6 d-flex flex-column justify-content-between">
-                <div>
-                  <img src="images/logotype-sm-dark.svg" width="171" alt="">
-                </div>
-                <ul class="mt-5 list-unstyled text-dark_primary">
-                  <li>07-1234-5678</li>
-                  <li><a href="mailto:sweetaste@email.com" class="text-dark_primary">sweetaste@email.com</a></li>
-                  <li>800 高雄市新興區幸福路 520 號</li>
-                </ul>
+          <div class="row">
+            <div class="col-md-6 d-flex flex-column justify-content-between">
+              <div>
+                <img src="images/logotype-sm-dark.svg" width="171" alt="">
               </div>
-              <div class="col-md-6 text-right d-none d-md-block">
-                <img src="images/sm-今天是個吃甜點的好日子.svg" width="60" alt="">
-              </div>
+              <ul class="mt-5 list-unstyled text-dark_primary">
+                <li>07-1234-5678</li>
+                <li><a href="mailto:sweetaste@email.com" class="text-dark_primary">sweetaste@email.com</a></li>
+                <li>800 高雄市新興區幸福路 520 號</li>
+              </ul>
             </div>
-            <div class="row mt-4">
-              <div class="col-md-6 mt-2">
-                <img src="images/ic-line@.svg" height="32" width="32" alt="line">
-                <img src="images/ic-facebook.svg" height="32" width="32" alt="fb">
-              </div>
-              <div class="col-md-6 text-md-right mt-2 text-dark_primary">
-                <span>© 2018 Sweetaste* All Rights Reserved</span>
-              </div>
+            <div class="col-md-6 text-right d-none d-md-block">
+              <img src="images/sm-今天是個吃甜點的好日子.svg" width="60" alt="">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6 mt-2">
+              <img src="images/ic-line@.svg" height="32" width="32" alt="line">
+              <img src="images/ic-facebook.svg" height="32" width="32" alt="fb">
+            </div>
+            <div class="col-md-6 text-md-right mt-2 text-dark_primary">
+              <span>© 2018 Sweetaste* All Rights Reserved</span>
+            </div>
           </div>
         </div>
       </section>
     </footer>
-    
+
 
   </div>
 

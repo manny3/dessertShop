@@ -19,7 +19,7 @@
             @extend %news-position;
         }
         .news-bg {
-            background-color: $dark-green;
+            background-color: rgba(63, 93, 69, 0.8);
             transition: background-color .5s;
             z-index: 2;
             @extend %news-position;
@@ -27,7 +27,7 @@
         .news-text {
             font-size: 24px;
             letter-spacing: 10px;
-            color: white;
+            color: $white;
             transition: color 0.5s;
             z-index: 3;
             writing-mode: vertical-lr;       
@@ -39,7 +39,7 @@
                 filter: blur(0);
             }
             .news-bg {
-                background-color: $light-yellow;
+                background-color: rgba(255, 225, 128, 0.8);
             }
             .news-text {
                 color: $dark-green;
@@ -51,6 +51,9 @@
         .news-section {
             margin-top: 0;
         }
+    }
+    .index-slogan-img {
+        margin: 30px 0;
     }
     .intro {
         background-color: $light-green;
@@ -76,7 +79,6 @@
         .intro {
             .intro-img-wrap {
                 .intro-bg-img {
-                    height: 100%;
                     min-height: 460px;
                 }
             }
@@ -85,8 +87,22 @@
             }
         }
     }
+    @media (max-width: 991px){
+        .intro {
+            margin: 0 0;
+            .intro-img-wrap {
+                margin-top: 0;
+                .intro-bg-img {
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+            }
+        }
+    }
     .product{
-        padding: 60px 0;
+        .card {
+            border-radius: 0;
+        }
         .product-img{
             height: 315px;
             @extend %bg-cover;
@@ -98,7 +114,7 @@
                 background-color: $dark-green;
                 writing-mode: vertical-lr;
                 padding: 15px 10px;
-                color: white;
+                color: $white;
                 letter-spacing: 5px;
             }
             .product-icon{
@@ -123,7 +139,7 @@
     }
     @media (min-width: 992px){
         .product {
-            padding: 30px 0;
+            padding: 30 0;
         }
     }
     
