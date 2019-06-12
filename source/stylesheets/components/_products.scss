@@ -18,7 +18,7 @@
 }
 .products {
     border-radius: 0;
-    .product-img{
+    .product-img {
         height: 315px;
         @extend %bg-cover;
         position: relative;
@@ -38,7 +38,7 @@
             right: 22px;
         }
     }
-    .product-btn{
+    .product-btn {
         background: $light-green;
         border: $light-green;
         color: #212529;
@@ -51,7 +51,21 @@
             border-color: #ccdbd4; 
         }
     }
+    .card-body {
+        p {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: 765px){
+        padding: 15px 30px;
+        border: 0;
+    }
 }
-.page-link {
-    border-radius: 0 !important;
+.products-page {
+    padding: 15px 0;
+    .page-link {
+        border-radius: 0 !important;
+    }
 }
+

@@ -11,6 +11,12 @@
             height: 48px;
         }
     }
+    @media (max-width: 992px) { 
+        .cart-spacer {
+            padding: 0 30px;
+            margin-top: 30px;
+        }
+    }
     .order {
         background-color: $dark-green;
         h4 {
@@ -25,6 +31,8 @@
         }
         @media (max-width: 992px) { 
             background-color: $white;
+            padding: 0 30px;
+            margin-top: 30px;
             h4 {
                 background-color: $light-green;
                 color: $dark-green;

@@ -5,9 +5,23 @@
         margin-top:0px;
         margin-bottom:0px;
     }
+    .login-title {
+        padding-top: 40px;
+        padding-bottom: 10px; 
+        @media (max-width: 768px) { 
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+    }
     .login_input {
         background-color: transparent;
         border: none;
+    }
+    .login-spacer {
+        padding: 30px;
     }
     .community_btn {
         width: 100%;
