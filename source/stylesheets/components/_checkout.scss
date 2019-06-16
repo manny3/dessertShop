@@ -15,8 +15,6 @@
                 background-color: $dark-green;          
                 font-size: 1rem;
                 z-index: 1;
-                @extend %bg-cover;
-                @extend %box-center;
                 &.active {
                     border-color: $light-green;
                     &:after {
@@ -70,7 +68,6 @@
             .shopping_item_img {
                 height: 80px;
                 min-width: 80px;
-                @extend %bg-cover;
             }
         }
     }
@@ -95,7 +92,6 @@
             background-color: $dark-green;
             font-size: 1rem;
             z-index: 1;
-            @extend %box-center;
         }
         &:after {
             content: "";

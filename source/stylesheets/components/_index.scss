@@ -1,153 +1,146 @@
-#content{
-    .content-bg-img {
-        height: 496px;
-        @extend %bg-cover;
+.content-bg-img {
+    height: 496px;
+}
+.news-section {
+    margin-top: -90px;
+}
+.news {
+    height: 256px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    .news-img { 
+        filter: blur(5px);
+        transition: filter 0.5s;
+        z-index: 1;
     }
-    .news-section {
-        margin-top: -90px;
+    .news-bg {
+        background-color: rgba($dark-green, 0.8);
+        transition: background-color .5s;
+        z-index: 2;
     }
-    .news {
-        height: 256px;
-        display: block;
-        position: relative;
-        overflow: hidden;
-        .news-img { 
-            filter: blur(5px);
-            transition: filter 0.5s;
-            z-index: 1;
-            @extend %bg-cover;
-            @extend %news-position;
+    .news-text {
+        font-size: 24px;
+        letter-spacing: 10px;
+        color: $white;
+        transition: color 0.5s;
+        z-index: 3;
+        writing-mode: vertical-lr;       
+    }
+    &.active,&:focus,&:hover {
+        .news-img {
+            filter: blur(0);
         }
         .news-bg {
-            background-color: rgba($dark-green, 0.8);
-            transition: background-color .5s;
-            z-index: 2;
-            @extend %news-position;
+            background-color: rgba($light-yellow, 0.8);
         }
         .news-text {
-            font-size: 24px;
-            letter-spacing: 10px;
-            color: $white;
-            transition: color 0.5s;
-            z-index: 3;
-            writing-mode: vertical-lr;       
-            @extend %news-position;
-            @extend %box-center;
-        }
-        &.active,&:focus,&:hover {
-            .news-img {
-                filter: blur(0);
-            }
-            .news-bg {
-                background-color: rgba($light-yellow, 0.8);
-            }
-            .news-text {
-                color: $dark-green;
-                font-weight: bold;
-            } 
-        }
+            color: $dark-green;
+            font-weight: bold;
+        } 
     }
-    @media (max-width: 768px) { 
-        .news-section {
-            margin-top: 0;
+}
+@media (max-width: 768px) { 
+    .news-section {
+        margin-top: 0;
+    }
+}
+.index-slogan-img {
+    margin: 30px 0;
+}
+.intro {
+    background-color: $light-green;
+    margin: 105px 0;
+    .intro-img-wrap {
+        margin-top: -20px;
+        margin-bottom: -20px;
+        .intro-bg-img {
+            height: 100%;
+            min-height: 250px;
         }
     }
-    .index-slogan-img {
-        margin: 30px 0;
+    .info-content {
+        padding: 70px 0;
+        line-height: 2.5;
     }
+    .intro-content-title{
+        margin-top: -20px;
+    }
+}
+@media (min-width: 992px){
     .intro {
-        background-color: $light-green;
-        margin: 105px 0;
         .intro-img-wrap {
-            margin-top: -24px;
-            margin-bottom: -24px;
             .intro-bg-img {
-                height: 100%;
-                min-height: 250px;
-                @extend %bg-cover;
+                min-height: 460px;
             }
         }
         .info-content {
-            padding: 70px 0;
-            line-height: 2.5;
-        }
-        .intro-content-title{
-            margin-top: -24px;
-        }
-    }
-    @media (min-width: 992px){
-        .intro {
-            .intro-img-wrap {
-                .intro-bg-img {
-                    min-height: 460px;
-                }
-            }
-            .info-content {
-                writing-mode: vertical-rl;
-            }
-        }
-    }
-    @media (max-width: 992px){
-        .intro {
-            margin: 0 0;
-            .intro-img-wrap {
-                margin-top: 0;
-                margin-bottom: 0;
-                .intro-bg-img {
-                    margin-left: -15px;
-                    margin-right: -15px;
-                }
-            }
-            .info-content {
-                padding: 30px 15px;
-            }
-        }
-    }
-    .product{
-        padding-bottom: 15px;
-        padding-right: 15px;
-        padding-left: 15px;
-        .card {
-            border-radius: 0;
-        }
-        .product-img{
-            height: 315px;
-            @extend %bg-cover;
-            position: relative;
-            .product-tag{
-                position: absolute;
-                left: 20px;
-                top: 0;
-                background-color: $dark-green;
-                writing-mode: vertical-lr;
-                padding: 15px 10px;
-                color: $white;
-                letter-spacing: 5px;
-            }
-            .product-icon{
-                position: absolute;
-                top: 20px;
-                right: 22px;
-            }
-        }
-        .product-btn{
-            background: $light-green;
-            border: $light-green;
-            color: #212529;
-            font-weight: bold;
-            font-size: 24px;
-            padding: 16px 0;
-            &:hover {
-                color: #212529;
-                background-color: #d4e0da;
-                border-color: #ccdbd4; 
-            }
-        }
-    }
-    @media (min-width: 992px){
-        .product {
-            padding: 30px 0;
+            writing-mode: vertical-rl;
         }
     }
 }
+@media (max-width: 992px){
+    .intro {
+        margin: 0 0;
+        .intro-img-wrap {
+            margin-top: 0;
+            margin-bottom: 0;
+            .intro-bg-img {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+        }
+        .info-content {
+            padding: 30px 15px;
+        }
+    }
+}
+.product{
+    padding-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    .card {
+        border-radius: 0;
+    }
+    .product-img{
+        height: 315px;
+
+        position: relative;
+        .product-tag{
+            position: absolute;
+            left: 20px;
+            top: 0;
+            background-color: $dark-green;
+            writing-mode: vertical-lr;
+            padding: 15px 10px;
+            color: $white;
+            letter-spacing: 5px;
+        }
+        .product-icon{
+            position: absolute;
+            top: 20px;
+            right: 22px;
+        }
+    }
+    .product-btn{
+        background: $light-green;
+        border: $light-green;
+        color: #212529;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 16px 0;
+        &:hover {
+            color: #212529;
+            background-color: #d4e0da;
+            border-color: #ccdbd4; 
+        }
+    }
+}
+@media (min-width: 992px){
+    .product {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+
 

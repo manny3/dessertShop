@@ -1,31 +1,29 @@
-#footer{
-    .footer-mail{
-        background: $dark-green;
-        padding: 30px 0;
-        .footer-mail-input{
-            label{
+.footer-mail{
+    background: $dark-green;
+    padding: 30px 0;
+    .footer-mail-input{
+        label{
+            position: absolute;
+            left: 20px;
+            z-index: 3;
+        }
+        .mail-btn-accent{
+            background-color: $light-yellow;
+            position: relative;
+            border-radius: 0;
+            .arrow {
                 position: absolute;
-                left: 20px;
-                z-index: 3;
-            }
-            .mail-btn-accent{
-                background-color: $light-yellow;
-                position: relative;
-                border-radius: 0;
-                .arrow {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-            @media (max-width: 991px){
-                padding: 0 15px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
+        @media (max-width: 991px){
+            padding: 0 15px;
+        }
     }
-    .footer-massage{
-        padding: 30px 0;
-        background-color: $light-green;
-    }
+}
+.footer-massage{
+    padding: 30px 0;
+    background-color: $light-green;
 }
